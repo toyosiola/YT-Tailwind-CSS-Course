@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark mode</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="dark:bg-black">
+    <!-- modifier: dark:<class> -->
+    <!-- media strategy (default) -->
+    <!-- class strategy -->
+    <div class="bg-gray-50 dark:bg-gray-800 dark:text-white">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, magnam!
+      Eligendi quod vel ullam suscipit quidem odit minus hic. Non.
+    </div>
+
+    <button
+      class="dark:text-white mt-8"
+      onclick="document.documentElement.classList.toggle('dark')"
+    >
+      Toggle mode
+    </button>
+  </body>
+</html>

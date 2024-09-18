@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Line height</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="space-y-4">
+    <!-- utility class: leading-<value of height> -->
+    <p class="text-xs leading-loose">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet
+      vero voluptate dolore obcaecati placeat voluptatum optio voluptatibus ad
+      in eaque expedita accusamus vel, nostrum similique, dicta doloremque,
+      beatae minima.
+    </p>
+
+    <!-- shorthand for font-size and line height -->
+    <p class="text-xs/loose">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum culpa
+      asperiores necessitatibus nisi deserunt a dolorum. Error corporis fuga
+      esse officia voluptatum assumenda, explicabo autem rerum quod illo quis
+      iusto!
+    </p>
+
+    <!-- arbitrary values -->
+    <p class="leading-[4]">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, sunt?
+      Beatae ex laborum sint mollitia enim iste dolores eos molestias, neque
+      nostrum. Recusandae natus magnam est nihil odit tempore! Asperiores!
+    </p>
+
+    <!-- customize your line height in tailwind config: theme.lineHeight or theme.extend.lineHeight -->
+
+    <p class="leading-extra-loose">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi eum, ipsam,
+      debitis odio atque quas culpa, ab obcaecati corrupti dolorem illum iste
+      consectetur vel dolores eius error! Omnis labore exercitationem corporis
+      dicta fugiat? Minus, maiores officiis repellendus voluptatum quasi
+      architecto?
+    </p>
+
+    <!-- AVAILABLE OUT-OF-THE-BOX LINE HEIGHTS
+    =====================================
+    leading-3	line-height: .75rem; /* 12px */
+    leading-4	line-height: 1rem; /* 16px */
+    leading-5	line-height: 1.25rem; /* 20px */
+    leading-6	line-height: 1.5rem; /* 24px */
+    leading-7	line-height: 1.75rem; /* 28px */
+    leading-8	line-height: 2rem; /* 32px */
+    leading-9	line-height: 2.25rem; /* 36px */
+    leading-10	line-height: 2.5rem; /* 40px */
+    leading-none	line-height: 1;
+    leading-tight	line-height: 1.25;
+    leading-snug	line-height: 1.375;
+    leading-normal	line-height: 1.5;
+    leading-relaxed	line-height: 1.625;
+    leading-loose	line-height: 2;
+    ===========================================-->
+  </body>
+</html>

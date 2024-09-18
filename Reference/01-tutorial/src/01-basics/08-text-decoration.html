@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text decoration</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="space-y-4 p-8">
+    <!-- utility class: <decoration value> -->
+    <p class="line-through">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tenetur.
+    </p>
+
+    <!-- underline offset and arbitrary values [px or rem]. available only for underline -->
+    <p class="underline underline-offset-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tenetur.
+    </p>
+
+    <!-- decoration thickness -->
+    <p class="underline decoration-2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero possimus
+      iste debitis quia aspernatur? Ut vel totam esse accusamus distinctio.
+    </p>
+
+    <!--arbitrary decoration thickness -->
+    <p class="underline decoration-[5px]">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero possimus
+      iste debitis quia aspernatur? Ut vel totam esse accusamus distinctio.
+    </p>
+
+    <!-- give text decoration a different color -->
+    <p class="overline text-red-400 decoration-blue-400">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem,
+      ea necessitatibus corporis fugit doloremque quia fuga ullam obcaecati
+      similique.
+    </p>
+
+    <!-- text decoration styles -->
+    <p class="underline decoration-double">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas aperiam
+      dolore sequi placeat inventore hic nostrum amet. Ipsum, enim minima.
+    </p>
+
+    <!-- AVAILABLE TEXT DECORATIONS
+    ===========================================
+    no-underline	text-decoration-line: none; (default)
+    underline	    text-decoration-line: underline;
+    overline	    text-decoration-line: overline;
+    line-through	text-decoration-line: line-through;
+    ===========================================
+    UNDERLINE OFFSET
+    ===========================================
+    underline-offset-auto	text-underline-offset: auto;
+    underline-offset-0	text-underline-offset: 0px;
+    underline-offset-1	text-underline-offset: 1px;
+    underline-offset-2	text-underline-offset: 2px;
+    underline-offset-4	text-underline-offset: 4px;
+    underline-offset-8	text-underline-offset: 8px;
+    ===========================================
+    DECORATION THICKNESS
+    ===========================================
+    decoration-0	        text-decoration-thickness: 0px;
+    decoration-1	        text-decoration-thickness: 1px;
+    decoration-2	        text-decoration-thickness: 2px;
+    decoration-4	        text-decoration-thickness: 4px;
+    decoration-8	        text-decoration-thickness: 8px;
+    decoration-auto	      text-decoration-thickness: auto;
+    decoration-from-font	text-decoration-thickness: from-font;
+    ===========================================
+    DECORATION STYLES
+    ===========================================
+    decoration-solid	text-decoration-style: solid; (default)
+    decoration-double	text-decoration-style: double;
+    decoration-dotted	text-decoration-style: dotted;
+    decoration-dashed	text-decoration-style: dashed;
+    decoration-wavy	  text-decoration-style: wavy;
+    ===========================================-->
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="flex min-h-screen items-center justify-center bg-gray-100">
+    <div class="w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <h2
+        class="mb-12 text-center text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl"
+      >
+        Image Gallery
+      </h2>
+
+      <!-- MARK: GALLERY GRID -->
+      <div
+        class="grid grid-cols-1 gap-6 text-white sm:grid-cols-2 md:grid-cols-3"
+      >
+        <!-- MARK: Grid Item 1 -->
+        <div class="group relative h-80 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="./images/gallery-img-1.jpg"
+            alt="Gallery Image 1"
+            class="h-full w-full object-cover"
+          />
+          <div class="gallery-title">Majestic Mountain View</div>
+          <p
+            class="absolute bottom-0 left-0 w-full translate-y-full bg-black/80 p-4 text-sm duration-300 group-hover:translate-y-0"
+          >
+            A breathtaking view of the mountains at sunrise, showcasing nature's
+            beauty in its purest form.
+          </p>
+        </div>
+
+        <!-- MARK: Grid Item 2 -->
+        <div class="group relative h-80 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="./images/gallery-img-2.jpeg"
+            alt="Gallery Image 2"
+            class="h-full w-full object-cover"
+          />
+          <div class="gallery-title">Cityscape at Dusk</div>
+          <p
+            class="absolute bottom-0 left-0 w-full translate-y-full bg-black/80 p-4 text-sm duration-300 group-hover:translate-y-0"
+          >
+            The city lights come alive as the sun sets, casting a golden hue
+            over the urban skyline.
+          </p>
+        </div>
+        <!-- MARK: Grid Item 3 -->
+        <div class="group relative h-80 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="./images/gallery-img-3.jpg"
+            alt="Gallery Image 3"
+            class="h-full w-full object-cover"
+          />
+          <div class="gallery-title">Serene Beach Sunset</div>
+          <p
+            class="absolute bottom-0 left-0 w-full translate-y-full bg-black/80 p-4 text-sm duration-300 group-hover:translate-y-0"
+          >
+            A peaceful sunset over a serene beach, where the sky meets the sea
+            in a spectacular display of colors.
+          </p>
+        </div>
+
+        <!-- MARK: Grid Item 4 -->
+        <div class="group relative h-80 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="./images/gallery-img-4.jpg"
+            alt="Gallery Image 4"
+            class="h-full w-full object-cover"
+          />
+          <div class="gallery-title">Lush Green Forest</div>
+          <p
+            class="absolute bottom-0 left-0 w-full translate-y-full bg-black/80 p-4 text-sm duration-300 group-hover:translate-y-0"
+          >
+            Immerse yourself in the tranquility of a lush, green forest, where
+            every leaf tells a story.
+          </p>
+        </div>
+
+        <!-- MARK: Grid Item 5 -->
+        <div class="group relative h-80 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="./images/gallery-img-5.jpg"
+            alt="Gallery Image 1"
+            class="h-full w-full object-cover"
+          />
+          <div class="gallery-title">Charming Village Street</div>
+          <p
+            class="absolute bottom-0 left-0 w-full translate-y-full bg-black/80 p-4 text-sm duration-300 group-hover:translate-y-0"
+          >
+            A quaint village street with charming houses and colorful flowers
+            lining the path, evoking a sense of nostalgia.
+          </p>
+        </div>
+
+        <!-- MARK: Grid Item 6 -->
+        <div class="group relative h-80 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="./images/gallery-img-6.jpg"
+            alt="Gallery Image 1"
+            class="h-full w-full object-cover"
+          />
+          <div class="gallery-title">Snow-Capped Peaks</div>
+          <p
+            class="absolute bottom-0 left-0 w-full translate-y-full bg-black/80 p-4 text-sm duration-300 group-hover:translate-y-0"
+          >
+            Snow-covered mountain peaks glistening under a clear blue sky,
+            offering a serene and majestic view.
+          </p>
+        </div>
+      </div>
+      <!-- END OF GALLERY GRID -->
+    </div>
+  </body>
+</html>

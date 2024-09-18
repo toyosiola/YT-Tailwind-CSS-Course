@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List style type</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="space-y-4">
+    <!-- utility class: list-<type of style> -->
+    <!-- Note: revert padding or modify @tailwind base styles -->
+    <ul class="list-disc p-[revert]">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <!-- arbitrary values -->
+    <ul class="list-[square] p-[revert]">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <!-- list style positions -->
+    <ul class="list-lower-roman p-10 list-inside">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+
+    <!-- customize your style type in tailwind config: theme.listStyleType or theme.extend.listStyleType -->
+    <ul class="list-lower-roman p-10">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+
+    <!-- AVAILABLE OUT-OF-THE-BOX LIST STYLE TYPE
+    ==========================================
+    list-none	    list-style-type: none; (default)
+    list-disc	    list-style-type: disc;
+    list-decimal	list-style-type: decimal;
+    ===========================================
+    LIST STYLE POSITION
+    ===========================================
+    list-outside	list-style-position: outside; (default)
+    list-inside	  list-style-position: inside;
+    ==========================================-->
+  </body>
+</html>

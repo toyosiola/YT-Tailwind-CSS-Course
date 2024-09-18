@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .blue-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    color: white;
+    @apply bg-blue-500 rounded-lg;
+  }
+}
+
+@layer base {
+  ul,
+  ol {
+    list-style: revert;
+    margin: revert;
+    padding: revert;
+  }
+}
+
+.card {
+  padding: theme(spacing.8);
+  background: theme(colors.red.500);
+  color: theme(colors.white);
+}
+
+@media screen(lg) {
+  /* write your custom styles here */
+}

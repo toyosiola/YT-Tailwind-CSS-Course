@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid column and row span</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- column span: col-span, col-start and end -->
+    <!-- <div class="grid grid-cols-3">
+      <div class="bg-red-500 p-10 text-center col-span-2">1</div>
+      <div class="bg-green-500 p-10 text-center">2</div>
+      <div class="bg-blue-500 p-10 text-center col-start-1 col-end-4">3</div>
+      <div class="bg-orange-500 p-10 text-center">4</div>
+      <div class="bg-gray-500 p-10 text-center col-span-2">5</div>
+      <div class="bg-lime-500 p-10 text-center col-start-1 col-end-3">6</div>
+    </div> -->
+
+    <!-- row span: row-span, row-start and -end -->
+    <div class="grid grid-rows-3 grid-flow-col">
+      <div class="bg-red-500 p-10 text-center">1</div>
+      <div class="bg-green-500 p-10 text-center row-span-2">2</div>
+      <div class="bg-blue-500 p-10 text-center row-start-1 row-end-4">3</div>
+      <div class="bg-orange-500 p-10 text-center">4</div>
+      <div class="bg-gray-500 p-10 text-center">5</div>
+      <div class="bg-lime-500 p-10 text-center">6</div>
+    </div>
+  </body>
+</html>

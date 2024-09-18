@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>States</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="min-h-screen content-center">
+    <!-- hover, focus, active, disabled -->
+    <form class="max-w-sm mx-auto space-y-6">
+      <div>
+        <input
+          placeholder="Username"
+          minlength="6"
+          type="text"
+          class="peer/username w-full border border-slate-300 px-3 py-2 rounded-lg focus:outline-sky-500"
+        />
+        <p class="text-gray-500 italic hidden peer-focus/username:block">
+          typing...
+        </p>
+      </div>
+
+      <div>
+        <input
+          placeholder="Password"
+          minlength="6"
+          type="password"
+          class="peer/password w-full border border-slate-300 px-3 py-2 rounded-lg focus:outline-sky-500"
+        />
+        <p class="text-red-500 italic hidden peer-invalid/password:block">
+          Minimum of 10 characters
+        </p>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-sky-500 px-3 py-2 text-white font-semibold rounded-lg hover:bg-sky-700 hover:font-bold active:bg-red-500 disabled:cursor-not-allowed disabled:bg-sky-200"
+      >
+        Submit
+      </button>
+    </form>
+
+    <!-- style element with parent state -->
+    <div
+      class="group/parent1 space-y-6 max-w-sm mx-auto mt-6 text-slate-600 px-3 py-2 hover:bg-sky-500"
+    >
+      <h3 class="font-bold group-hover/parent1:text-white">
+        This is a heading
+      </h3>
+      <p class="text-justify group-hover/parent1:text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum
+        minus eum nisi fugiat voluptatum atque dignissimos modi, assumenda
+        molestiae facere ab, perspiciatis nam labore doloremque quos molestias.
+        Vitae, placeat molestiae animi hic architecto voluptatibus odio beatae
+        velit maxime eveniet est optio asperiores eos voluptates facere,
+        nesciunt, deleniti quibusdam obcaecati.
+      </p>
+
+      <button class="group/parent2 group-hover/parent1:text-white">
+        Hover me
+        <span
+          class="hidden group-hover:/parent1:text-red-500 group-hover/parent2:inline"
+          >Yay! I'm here...</span
+        >
+      </button>
+    </div>
+    <!-- style elements with peer state -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- flex -->
+    <!-- flex - direction, wrap, grow, shrink, basis, flex -->
+    <!-- <div class="flex *:text-center *:text-white">
+      <div class="bg-red-500 p-10 basis-64 shrink-0">1</div>
+      <div class="bg-blue-500 p-10 basis-32 shrink-0">2</div>
+      <div class="bg-green-500 p-10 basis-3">3</div>
+     
+    </div> -->
+
+    <!-- flex: flex-1, flex-auto, flex-initial, flex-none -->
+    <!-- <div class="flex *:text-center">
+      <div class="bg-red-500 p-10 w-6 flex-none">1</div>
+      <div class="bg-blue-500 p-10 w-14 flex-none">2</div>
+      <div class="bg-green-500 p-10 w-96 flex-none">3</div>
+    </div> -->
+
+    <!-- gap, justify-content, align-items, align-content -->
+    <div
+      class="flex *:text-center h-[50vh] border border-red-500 content-start flex-wrap"
+    >
+      <div class="bg-red-500 p-10 w-1/2">1</div>
+      <div class="bg-blue-500 p-10 w-1/2">2</div>
+      <div class="bg-green-500 p-10 w-1/2">3</div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+flex directions: flex-row, flex-col, flex-row-reverse, flex-col-reverse,
+wrap: flex-wrap, flex-nowrap, flex-wrap-reverse
+grow: grow, grow-0
+shrink: shrink, shrink-0
+basis: basis-<size> check docs https://tailwindcss.com/docs/flex-basis
+flex: flex-1, flex-auto, flex-initial, flex-none (shortcut for grow and shrink)
+-->

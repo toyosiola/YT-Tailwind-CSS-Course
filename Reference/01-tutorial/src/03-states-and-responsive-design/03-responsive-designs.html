@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive designs</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- Every utility class can be applied conditionally at different breakpoints
+    - All you need to do is prefix the utility class with breakpoint name -->
+    <p class="mx-auto text-sm px-2 sm:text-xl 3xl:text-4xl max-w-screen-lg">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
+      praesentium commodi? Numquam fugit ut, dolorem facere, ducimus, aut amet
+      temporibus reiciendis quo cupiditate molestiae culpa vero consequatur eum
+      reprehenderit qui earum eos adipisci animi excepturi dolores ad! Quia, id.
+      Deserunt iusto tenetur facilis odit officiis dolor consequatur nam
+      corrupti at!
+    </p>
+
+    <!-- Targeting a breakpoint range -->
+    <p class="bg-red-500 md:max-lg:bg-blue-500">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque inventore
+      molestiae dignissimos harum laboriosam exercitationem, veniam ipsa labore
+      vel, sint provident aut laborum eligendi rerum, doloremque et. Officiis,
+      incidunt molestias?
+    </p>
+
+    <!-- customize your screens in tailwind config: theme.screens or theme.extend.screens. For more screen customization: https://tailwindcss.com/docs/screens -->
+  </body>
+</html>
+
+<!-- AVAILABLE OUT-OF-THE-BOX BREAKPOINTS 
+    ===========================================
+    sm	640px 	@media (min-width: 640px) { ... }
+    md	768px	  @media (min-width: 768px) { ... }
+    lg	1024px	@media (min-width: 1024px) { ... }
+    xl	1280px	@media (min-width: 1280px) { ... }
+    2xl	1536px	@media (min-width: 1536px) { ... }
+    ===========================================
+    AVAILABLE OUT-OF-THE-BOX MAX MODIFIERS
+    ===========================================
+    max-sm	@media not all and (min-width: 640px) { ... }
+    max-md	@media not all and (min-width: 768px) { ... }
+    max-lg	@media not all and (min-width: 1024px) { ... }
+    max-xl	@media not all and (min-width: 1280px) { ... }
+    max-2xl	@media not all and (min-width: 1536px) { ... }
+    ===========================================-->

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling direct children</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- style direct children with * modifier -->
+    <ul
+      class="pl-10 *:text-green-200 *:bg-green-500 *:inline *:rounded-lg *:px-3 *:py-2"
+    >
+      <li class="">Item 1</li>
+      <li class="">Item 2</li>
+      <li class="">Item 3</li>
+      <li class="">Item 4</li>
+      <li class="">Item 5</li>
+    </ul>
+    <!-- NOTE: only advisable for children you do not have access to -->
+  </body>
+</html>

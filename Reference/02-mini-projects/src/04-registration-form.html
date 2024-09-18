@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-gray-100 px-4 sm:px-6 lg:px-8"
+  >
+    <div class="w-full max-w-lg rounded-lg bg-white p-8 shadow-lg">
+      <h2 class="mb-6 text-center text-3xl font-bold capitalize text-gray-700">
+        create account
+      </h2>
+
+      <!-- MARK: FORM -->
+      <form>
+        <!-- Full name -->
+        <div class="mb-4">
+          <label
+            for="full-name"
+            class="mb-2 block font-semibold text-gray-700 after:text-red-500 after:content-['*']"
+          >
+            Full Name
+          </label>
+          <input
+            type="text"
+            required
+            id="full-name"
+            placeholder="firstName LastName"
+            class="w-full rounded-lg border border-gray-300 px-4 py-2 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 hover:border-teal-500 focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600 invalid:focus:border-red-600 invalid:focus:ring-red-600"
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label
+            for="email"
+            class="mb-2 block font-semibold text-gray-700 after:text-red-500 after:content-['*']"
+          >
+            Email
+          </label>
+          <input
+            type="email"
+            required
+            id="email"
+            placeholder="mail@example.com"
+            class="w-full rounded-lg border border-gray-300 px-4 py-2 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 hover:border-teal-500 focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600 invalid:focus:border-red-600 invalid:focus:ring-red-600"
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="mb-4">
+          <label
+            for="password"
+            class="mb-2 block font-semibold text-gray-700 after:text-red-500 after:content-['*']"
+          >
+            Password
+          </label>
+          <input
+            type="password"
+            required
+            minlength="6"
+            id="password"
+            placeholder="******"
+            class="w-full rounded-lg border border-gray-300 px-4 py-2 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 hover:border-teal-500 focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600 invalid:focus:border-red-600 invalid:focus:ring-red-600"
+          />
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mb-6">
+          <label
+            for="confirm-password"
+            class="mb-2 block font-semibold text-gray-700 after:text-red-500 after:content-['*']"
+          >
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            required
+            minlength="6"
+            id="full-name"
+            placeholder="******"
+            class="w-full rounded-lg border border-gray-300 px-4 py-2 placeholder:text-gray-400 invalid:border-red-600 invalid:text-red-600 hover:border-teal-500 focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600 invalid:focus:border-red-600 invalid:focus:ring-red-600"
+          />
+        </div>
+
+        <!-- Submit button -->
+        <button
+          type="submit"
+          class="w-full rounded-lg bg-teal-600 py-2 font-bold text-white duration-200 hover:bg-teal-700 active:outline-none active:ring-2 active:ring-teal-600 active:ring-opacity-50"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

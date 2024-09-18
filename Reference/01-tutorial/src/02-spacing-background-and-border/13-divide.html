@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divide</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- DIVIDE: BORDER BETWEEN CHILDREN ELEMENTS -->
+    <!-- divide-width, divide-color, divide-style, arbitrary values -->
+    <div class="divide-y-2 divide-red-500 divide-dashed">
+      <p class="">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+        asperiores rem, cumque doloremque dolorum officiis quas iusto eum
+        voluptatum quos.
+      </p>
+      <p class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+        tempore exercitationem cupiditate adipisci fuga ipsam expedita aperiam
+        neque ratione quam voluptate ab consequuntur, temporibus commodi
+        molestiae, quibusdam ad natus animi.
+      </p>
+    </div>
+
+    <div class="divide-x-4 divide-red-500 divide-double">
+      <span>asdfbsgfrmhhnm</span><span>atrewthiryjopj</span>
+    </div>
+
+    <!-- divide-y-reverse or divide-x-reverse is used when children order are reversed e.g. in flex row/column reverse situation -->
+    <div
+      class="flex flex-row-reverse divide-x-4 divide-red-500 divide-x-reverse"
+    >
+      <div class="">child 1</div>
+      <div class="">child 2</div>
+      <div class="">child 3</div>
+    </div>
+  </body>
+</html>
+
+<!-- OUT-OF-THE-BOX DIVIDE WIDTH
+  ===========================================
+   VARIANTS: divide-y, divide-x
+  ===========================================
+  divide-y	  divide-width: 1px;
+  divide-y-0	divide-width: 0px;
+  divide-y-2	divide-width: 2px;
+  divide-y-4	divide-width: 4px;
+  divide-y-8	divide-width: 8px;
+  ===========================================
+  DIVIDE STYLE: divide-solid (default), dashed, dotted, double, hidden, none
+  ===========================================-->

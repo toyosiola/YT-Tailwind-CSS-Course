@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- grid -->
+    <!-- grid-template-columns -->
+    <!-- <div class="*:text-center grid grid-cols-3">
+      <div class="bg-red-500 p-10">1</div>
+      <div class="bg-blue-500 p-10">2</div>
+      <div class="bg-green-500 p-10">3</div>
+    </div> -->
+
+    <!-- grid-template-rows -->
+    <!-- <div class="*:text-center grid grid-rows-4 grid-flow-col">
+      <div class="bg-red-500 p-10">1</div>
+      <div class="bg-blue-500 p-10">2</div>
+      <div class="bg-green-500 p-10">3</div>
+      <div class="bg-yellow-500 p-10">1</div>
+      <div class="bg-gray-500 p-10">2</div>
+      <div class="bg-orange-500 p-10">3</div>
+    </div> -->
+
+    <!-- arbitrary values: grid-cols-[200px_1fr] -->
+    <!-- <div
+      class="*:text-center grid grid-rows-[100px_200px_100px_150px] grid-flow-col"
+    >
+      <div class="bg-red-500 p-10">1</div>
+      <div class="bg-blue-500 p-10">2</div>
+      <div class="bg-green-500 p-10">3</div>
+      <div class="bg-yellow-500 p-10">1</div>
+      <div class="bg-gray-500 p-10">2</div>
+      <div class="bg-orange-500 p-10">3</div>
+    </div> -->
+
+    <!-- gap, justify-content, align-items, align-content (same class as flex) -->
+    <!-- justify-items, justify-self, align-self (self), place-items, place-self -->
+    <div class="*:text-center grid grid-cols-3 h-screen">
+      <div class="bg-red-500 p-10">1</div>
+      <div class="bg-blue-500 p-10">2</div>
+      <div class="bg-green-500 p-10 place-self-center">3</div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+grid-template-columns: grid-cols-1 to 12
+grid-template-rows: grid-rows-1 to 12
+justify-items: justify-items-center, -start, -end, -stretch
+justify-self: justify-self-center, -start, -end, -stretch
+align-self: self-start, -center, -end, -stretch, -auto, -baseline
+place-items: place-items-start, -end, -center, -stretch
+place-self: place-self-start, -end, -center, -stretch, -auto
+-->
